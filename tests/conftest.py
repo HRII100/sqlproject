@@ -6,7 +6,7 @@ from pytest_mysql.executor_noop import NoopMySQLExecutor
 from traits.implementation import TraitsUtility
 
 # Default configurations
-from .interface import BASE_USER_NAME, BASE_USER_PASS, ADMIN_USER_NAME, ADMIN_USER_PASS
+from traits.interface import BASE_USER_NAME, BASE_USER_PASS, ADMIN_USER_NAME, ADMIN_USER_PASS
 
 ################################################################################
 # MariaDB fixtures
