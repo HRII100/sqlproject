@@ -31,9 +31,6 @@ jobs:
           - 7687:7687
         options: >-
           --env=NEO4J_AUTH=none
-          --health-interval=10s
-          --health-timeout=10s
-          --health-retries=10
 
     steps:
     - name: Checkout code
