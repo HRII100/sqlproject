@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from typing import List, Tuple, Optional, Dict
+from typing import List, Tuple, Optional, Dict, Union
 from enum import Enum
 
 # Global Constants
@@ -17,7 +17,7 @@ class TraitsKey():
     Encapsulate an int or str value and leaves the freedom to use them as keys/IDs
     """
 
-    def __init__(self, value: str|int) -> None:
+    def __init__(self, value: Union[str, int]) -> None:
         self.id = value
 
     def to_string(self) -> str:
