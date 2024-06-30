@@ -9,4 +9,4 @@ pytest-mock==3.14.0
 tomli==2.0.1
 pytest_mysql==3.0.0
 neo4j==5.22.0
-mysql==0.0.3
+mysql-connector-python==8.4.0

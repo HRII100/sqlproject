@@ -82,7 +82,6 @@ class TraitsUtility(TraitsUtilityInterface):
 class Traits(TraitsInterface):
 
     def __init__(self, rdbms_connection, rdbms_admin_connection, neo4j_driver) -> None:
-        self.rdbms_connection = rdbms_connection
         self.connection = rdbms_connection
         self.rdbms_admin_connection = rdbms_admin_connection
         self.neo4j_driver = neo4j_driver
