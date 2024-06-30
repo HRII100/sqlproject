@@ -3,10 +3,10 @@ name: Run Tests
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   test:
@@ -31,17 +31,17 @@ jobs:
           - 7687:7687
         options: >-
           --env=NEO4J_AUTH=none
-          --health-cmd="curl -s http://localhost:7474/ || exit 1"
+          --health-cmd="curl -s http://localhost:7474/browser/ || exit 1"
           --health-interval=10s
-          --health-timeout=5s
-          --health-retries=3
+          --health-timeout=10s
+          --health-retries=10
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
     - name: Wait for services to be healthy
-      run: sleep 30
+      run: sleep 60
 
     - name: Set up Python
       uses: actions/setup-python@v2
